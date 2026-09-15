@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Relationscoaching för kontakt, intimitet och utveckling | You, Me &</title>
+  <meta name="description" content="You, Me & är Thomas och Celina Linderholm. Vi erbjuder ett varmt och icke-dömande rum för samtal om relationer, kontakt, intimitet, längtan, svartsjuka och personlig utveckling." />
+  <style>
+    :root {
+      --bg: #f7f2ec;
+      --surface: #fffaf5;
+      --text: #2c241f;
+      --muted: #6b5d54;
+      --line: #e6d9cd;
+      --accent: #8b5e4c;
+      --accent-dark: #6e4739;
+      --max: 1100px;
+      --radius: 20px;
+      --shadow: 0 12px 30px rgba(44, 36, 31, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    img { max-width: 100%; display: block; }
+    a { color: inherit; }
+
+    .wrap {
+      width: min(calc(100% - 32px), var(--max));
+      margin: 0 auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(247, 242, 236, 0.94);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 16px 0;
+    }
+
+    .brand {
+      font-weight: 700;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+    }
+
+    .nav {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .hero {
+      padding: 56px 0 28px;
+    }
+
+    .hero-grid,
+    .about-grid,
+    .contact-grid {
+      display: grid;
+      gap: 24px;
+    }
+
+    .hero-grid,
+    .about-grid {
+      grid-template-columns: 1.15fr 0.85fr;
+      align-items: center;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-copy,
+    .hero-image,
+    .about-copy,
+    .topics,
+    .contact-box {
+      padding: 28px;
+    }
+
+    .eyebrow {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+    }
+
+    h1, h2 {
+      line-height: 1.15;
+      margin-top: 0;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 5vw, 4.2rem);
+      margin-bottom: 18px;
+    }
+
+    h2 {
+      font-size: clamp(1.6rem, 3vw, 2.3rem);
+      margin-bottom: 14px;
+    }
+
+    .lead {
+      font-size: 1.08rem;
+      color: var(--muted);
+      max-width: 58ch;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 14px 22px;
+      border-radius: 999px;
+      margin-top: 22px;
+    }
+
+    .button:hover {
+      background: var(--accent-dark);
+    }
+
+    .portrait {
+      border-radius: 16px;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      width: 100%;
+      filter: grayscale(100%);
+    }
+
+    section {
+      padding: 18px 0;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .topics ul li + li {
+      margin-top: 8px;
+    }
+
+    .contact-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .contact-mail {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin: 14px 0 0;
+    }
+
+    .site-footer {
+      padding: 32px 0 48px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 900px) {
+      .header-inner,
+      .hero-grid,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .header-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">You, Me &</a>
+      <nav class="nav" aria-label="Huvudnavigation">
+        <a href="#om-oss">Om oss</a>
+        <a href="#det-har">Det här kan vi hjälpa er att utforska</a>
+        <a href="#kontakt">Kontakta oss</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="card hero-copy">
+          <div class="eyebrow">Relationscoaching för kontakt, intimitet och utveckling</div>
+          <h1>You, Me & — samtal om relationer, kontakt och utveckling</h1>
+          <p class="lead">Vi är Thomas och Celina Linderholm. Genom You, Me & vill vi erbjuda ett varmt och icke-dömande rum för dig som vill förstå dig själv och dina relationer lite djupare.</p>
+          <p class="lead">Det kan handla om närhet, kontakt, intimitet, sexualitet, återkommande relationsmönster, längtan, svartsjuka eller osäkerhet. Ibland söker man tydlighet. Ibland söker man bara ett sammanhang där det går att prata ärligt.</p>
+          <a class="button" href="mailto:info@youmeand.se">Kontakta oss</a>
+        </div>
+
+        <div class="card hero-image">
+          <img class="portrait" src="images/thomas-celina.jpeg" alt="Thomas och Celina Linderholm" />
+        </div>
+      </div>
+    </section>
+
+    <section id="om-oss">
+      <div class="wrap about-grid">
+        <div class="card about-copy">
+          <h2>Om oss</h2>
+          <p>Vi är Thomas och Celina, och tillsammans har vi varit på en resa i mer än 15 år, varav 8 år som gifta. Med två små barn har vårt förhållande fortsatt att utvecklas, samtidigt som balansen mellan familjeliv, arbete och kärleksliv ständigt förändras.</p>
+          <p>Thomas är utbildad ingenjör och Celina är advokat och certifierad medlare inom familjerätt. Vi ser oss inte som personer med alla svar, utan som två människor som har lärt sig mycket längs vägen och som gärna delar våra erfarenheter med andra.</p>
+          <p>Under våra första tio år levde vi monogamt. Under de senaste fem åren har vi periodvis utforskat etisk icke-monogami. Vår väg in i alternativa relationsstrukturer började med Tantra år 2017.</p>
+          <p>För oss har det blivit tydligt att det går att utforska frihet utan att förlora grundläggande trygghet. Nyckeln har varit att prioritera varandra och vår relation, och att ge den tid, energi och det engagemang den förtjänar.</p>
+        </div>
+
+        <div class="card topics" id="det-har">
+          <h2>Det här kan vi hjälpa er att utforska</h2>
+          <ul>
+            <li>relationer och kontakt</li>
+            <li>intimitet och sexualitet</li>
+            <li>återkommande relationsmönster</li>
+            <li>längtan, osäkerhet och svartsjuka</li>
+            <li>monogami, öppna relationer och personliga gränser</li>
+            <li>kommunikation, självinsikt och personlig utveckling</li>
+          </ul>
+          <p>Vi utgår inte från att en viss relationsform passar alla. Det viktiga är att skapa större tydlighet kring vad som är sant, hållbart och levande för just dig eller er.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt">
+      <div class="wrap contact-grid">
+        <div class="card contact-box">
+          <h2>Kontakta oss</h2>
+          <p>Om du vill höra av dig, ställa en fråga eller ta första steget till ett samtal är du välkommen att kontakta oss på mail.</p>
+          <p class="contact-mail"><a href="mailto:info@youmeand.se">info@youmeand.se</a></p>
+          <a class="button" href="mailto:info@youmeand.se">Kontakta oss</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>You, Me & — Thomas och Celina Linderholm</p>
+    </div>
+  </footer>
+</body>
+</html>
