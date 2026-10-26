@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>You, Me & | Relationscoaching och föreläsningar online</title>
-  <meta name="description" content="Thomas och Celina erbjuder coachning och föreläsningar online om öppna relationer, närhet och att skapa ett drömliv på egna villkor." />
+  <title>YOUME AND | Relationscoaching online och föreläsningar</title>
+  <meta name="description" content="Coachning och föreläsningar online om relationer, öppenhet och att skapa ett liv som känns rätt för er. YOUME AND delar erfarenheter, perspektiv och verktyg." />
   <link rel="canonical" href="https://youmeand.se/" />
   <link rel="alternate" hreflang="sv" href="https://youmeand.se/" />
   <link rel="alternate" hreflang="en" href="https://youmeand.se/en/" />
@@ -13,91 +13,89 @@
     :root {
       color-scheme: light;
       --paper: #f4f2ec;
-      --ink: #242923;
-      --muted: #60665e;
-      --line: #d8d9d1;
-      --accent: #586750;
-      --accent-dark: #394536;
-      --serif: Georgia, "Times New Roman", serif;
+      --ink: #191b1c;
+      --muted: #4f5558;
+      --line: #c9cac6;
+      --accent: #263ee8;
+      --accent-dark: #1d31be;
+      --image-ground: #d8d9d4;
+      --max: 1200px;
       --sans: Inter, "Helvetica Neue", Arial, sans-serif;
-      --measure: 68rem;
     }
     *, *::before, *::after { box-sizing: border-box; }
     html { scroll-behavior: smooth; scroll-padding-top: 6rem; }
-    body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); font-size: 1rem; line-height: 1.65; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 400 16px/1.65 var(--sans); }
     a { color: inherit; }
     img { display: block; max-width: 100%; }
-    .wrap { width: min(calc(100% - 3rem), var(--measure)); margin-inline: auto; }
-    .site-header { position: sticky; inset-block-start: 0; z-index: 5; background: rgb(244 242 236 / 94%); border-bottom: 1px solid var(--line); backdrop-filter: blur(12px); }
-    .header-inner { min-height: 4.5rem; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
-    .brand { font-family: var(--serif); font-size: 1.35rem; letter-spacing: -.04em; text-decoration: none; white-space: nowrap; }
-    .nav { display: flex; align-items: center; justify-content: flex-end; gap: clamp(.8rem, 2.3vw, 1.75rem); flex-wrap: wrap; }
-    .nav a { font-size: .9rem; text-decoration: none; }
+    .wrap { width: min(calc(100% - 3rem), var(--max)); margin-inline: auto; }
+    .site-header { position: sticky; inset-block-start: 0; z-index: 5; background: rgb(244 242 236 / 95%); border-bottom: 1px solid var(--line); backdrop-filter: blur(12px); }
+    .header-inner { min-height: 74px; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
+    .brand { font-size: 17px; line-height: 1; font-weight: 800; letter-spacing: .12em; text-decoration: none; white-space: nowrap; }
+    .nav { display: flex; align-items: center; justify-content: flex-end; gap: clamp(16px, 2.6vw, 36px); flex-wrap: wrap; }
+    .nav a { font-size: 14px; text-decoration: none; }
     .nav a:hover, .nav a:focus-visible { color: var(--accent); text-decoration: underline; text-underline-offset: .25em; }
-    .language-switch { display: flex; gap: .45rem; align-items: center; padding-inline-start: 1rem; border-inline-start: 1px solid var(--line); white-space: nowrap; }
+    .language-switch { display: flex; align-items: center; gap: 8px; padding-inline-start: 18px; border-inline-start: 1px solid var(--line); white-space: nowrap; }
     .language-switch a[aria-current="page"] { font-weight: 700; text-underline-offset: .25em; text-decoration: underline; }
-    .hero { padding-block: clamp(3.5rem, 9vw, 7rem) clamp(4rem, 8vw, 6.5rem); }
-    .hero-grid { display: grid; grid-template-columns: 1.12fr .88fr; align-items: center; gap: clamp(2rem, 6vw, 5.5rem); }
-    .eyebrow, .section-label { margin: 0 0 1.1rem; color: var(--accent); font-size: .78rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+    .hero { padding-block: clamp(56px, 8vw, 110px) clamp(64px, 9vw, 120px); }
+    .hero-grid { display: grid; grid-template-columns: 1.08fr .92fr; align-items: center; gap: clamp(36px, 7vw, 90px); }
+    .eyebrow, .section-label { margin: 0 0 22px; color: var(--accent); font-size: 14px; font-weight: 700; letter-spacing: .12em; line-height: 1.5; text-transform: uppercase; }
+    .eyebrow .brand-name { color: var(--ink); }
     h1, h2, h3, p { margin-block-start: 0; }
-    h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: -.045em; }
-    h1 { max-width: 11ch; margin-block-end: 1.25rem; font-size: clamp(3.6rem, 8vw, 7.5rem); line-height: .98; }
-    h1 .amp { display: block; color: var(--accent); font-size: 1.22em; line-height: .78; }
-    .hero-copy .lead { max-width: 37rem; color: var(--muted); font-size: clamp(1.08rem, 1.8vw, 1.28rem); }
-    .cta-row { display: flex; align-items: center; gap: 1.25rem; flex-wrap: wrap; margin-block-start: 2rem; }
-    .button { display: inline-flex; min-height: 3.25rem; align-items: center; justify-content: center; padding: .8rem 1.35rem; background: var(--accent); color: #fff; font-weight: 700; text-decoration: none; transition: background .2s ease, transform .2s ease; }
+    h1, h2, h3 { font-weight: 600; letter-spacing: -.065em; }
+    h1 { max-width: 10ch; margin-block-end: 24px; font-size: clamp(58px, 8.5vw, 112px); line-height: .9; }
+    .hero-copy { max-width: 670px; }
+    .hero-lead { max-width: 620px; margin-block-end: 0; color: var(--muted); font-size: clamp(18px, 2vw, 22px); line-height: 1.55; }
+    .cta-row { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; margin-block-start: 32px; }
+    .button { display: inline-flex; min-height: 50px; align-items: center; justify-content: center; padding: 12px 22px; background: var(--accent); color: #fff; font-size: 14px; font-weight: 700; text-decoration: none; transition: background .2s ease, transform .2s ease; }
     .button:hover, .button:focus-visible { background: var(--accent-dark); transform: translateY(-2px); }
-    .text-link { color: var(--muted); font-size: .95rem; text-underline-offset: .25em; }
-    .portrait-frame { position: relative; padding: 0 0 1.25rem 1.25rem; }
-    .portrait-frame::before { position: absolute; inset: 1.25rem 1.25rem 0 0; border: 1px solid var(--accent); content: ""; }
+    .text-link { color: var(--muted); font-size: 14px; text-underline-offset: 4px; }
+    .portrait-frame { position: relative; margin: 0; padding: 0 0 16px 16px; }
+    .portrait-frame::before { position: absolute; inset: 16px 16px 0 0; border: 1px solid var(--accent); content: ""; }
     .portrait { position: relative; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; filter: grayscale(100%); }
-    .image-note { margin: .8rem 0 0; color: var(--muted); font-size: .85rem; }
-    .section { padding-block: clamp(4rem, 8vw, 7rem); border-top: 1px solid var(--line); }
-    .idea-grid, .story-grid, .about-grid, .offer-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(2rem, 7vw, 6rem); align-items: start; }
-    .section-title { max-width: 12ch; margin-block-end: 0; font-size: clamp(2.5rem, 5vw, 4.7rem); line-height: 1.02; }
-    .idea-copy { max-width: 42rem; }
-    .idea-copy p { font-size: clamp(1.2rem, 2vw, 1.55rem); line-height: 1.5; }
-    .idea-copy .script-line { margin-block-start: 2rem; color: var(--accent); font-family: var(--serif); font-size: clamp(1.65rem, 3vw, 2.35rem); line-height: 1.25; }
-    .story-grid { grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 4rem); }
-    .story-item { padding-block-start: 1.2rem; border-top: 2px solid var(--accent); }
-    .story-item h3 { margin-block-end: .8rem; font-size: clamp(1.8rem, 3vw, 2.8rem); line-height: 1.12; }
-    .story-item p { max-width: 34rem; color: var(--muted); }
-    .topics { display: flex; flex-wrap: wrap; gap: .7rem; margin-block: 1.5rem 1rem; }
-    .topic { padding: .38rem .8rem; border: 1px solid var(--line); color: var(--ink); font-size: .94rem; }
-    .section-intro { max-width: 43rem; color: var(--muted); }
-    .about-copy p, .offer-copy p { color: var(--muted); }
-    .credentials { color: var(--ink) !important; }
-    .offer-item + .offer-item { margin-block-start: 2.4rem; }
-    .offer-item h3 { margin-block-end: .45rem; font-size: clamp(1.7rem, 3vw, 2.5rem); }
+    .image-note { margin: 12px 0 0; color: var(--muted); font-size: 14px; letter-spacing: .08em; }
+    .section { padding-block: clamp(64px, 9vw, 118px); border-top: 1px solid var(--line); }
+    .split { display: grid; grid-template-columns: .78fr 1.22fr; gap: clamp(30px, 7vw, 90px); align-items: start; }
+    .section-title { max-width: 11ch; margin-block-end: 0; font-size: clamp(40px, 6vw, 76px); line-height: .98; }
+    .section-copy { max-width: 750px; }
+    .section-copy p { color: var(--muted); font-size: clamp(17px, 1.8vw, 20px); line-height: 1.65; }
+    .section-copy p:last-child { margin-block-end: 0; }
+    .idea-copy { color: var(--ink) !important; font-size: clamp(25px, 3.4vw, 42px) !important; line-height: 1.32 !important; letter-spacing: -.035em; }
+    .story-block + .story-block { margin-block-start: clamp(46px, 7vw, 82px); padding-block-start: clamp(36px, 5vw, 60px); border-top: 1px solid var(--line); }
+    .story-block h3, .offer-item h3 { margin-block-end: 18px; font-size: clamp(29px, 4vw, 46px); line-height: 1.08; }
+    .topics { display: flex; flex-wrap: wrap; gap: 10px; margin-block: 8px 24px; }
+    .topic { padding: 7px 12px; border: 1px solid var(--line); font-size: 14px; }
+    .credentials { color: var(--ink) !important; font-weight: 600; }
+    .offer-item + .offer-item { margin-block-start: 44px; padding-block-start: 38px; border-top: 1px solid var(--line); }
     .contact-section { background: var(--ink); color: var(--paper); }
-    .contact-section .section-label { color: #b9c6ae; }
-    .contact-section .section-title { max-width: 10ch; }
-    .contact-copy { max-width: 40rem; color: #d6d9d1; }
-    .contact-links { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; margin-block-start: 1.5rem; }
+    .contact-section .section-label { color: #c0c9ff; }
+    .contact-section .section-title { max-width: 9ch; }
+    .contact-section .section-copy p { color: #e0e1de; }
+    .contact-links { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; margin-block-start: 28px; }
     .contact-links .button { background: var(--paper); color: var(--ink); }
     .contact-links .button:hover, .contact-links .button:focus-visible { background: #fff; }
     .contact-links .text-link { color: var(--paper); }
-    .site-footer { padding-block: 1.5rem 2rem; color: var(--muted); font-size: .9rem; }
-    .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
+    .site-footer { padding-block: 24px 32px; color: var(--muted); font-size: 14px; }
+    .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
     .site-footer p { margin: 0; }
-    :focus-visible { outline: 3px solid #a5b59a; outline-offset: 3px; }
+    :focus-visible { outline: 3px solid #7887ff; outline-offset: 3px; }
     @media (max-width: 760px) {
-      .wrap { width: min(calc(100% - 2rem), var(--measure)); }
-      .header-inner { align-items: flex-start; flex-direction: column; gap: .75rem; padding-block: .85rem; }
-      .nav { justify-content: flex-start; gap: .7rem 1rem; }
-      .language-switch { padding-inline-start: .75rem; }
-      .hero-grid, .idea-grid, .about-grid, .offer-grid { grid-template-columns: 1fr; }
-      .hero-grid { gap: 2.5rem; }
-      .hero-copy { max-width: 42rem; }
+      .wrap { width: min(calc(100% - 2rem), var(--max)); }
+      .header-inner { align-items: flex-start; flex-direction: column; gap: 16px; padding-block: 18px; }
+      .nav { justify-content: flex-start; gap: 12px 20px; }
+      .language-switch { padding-inline-start: 12px; }
+      .hero-grid, .split { grid-template-columns: 1fr; }
+      .hero-grid { gap: 42px; }
+      .hero-copy { max-width: 700px; }
       h1 { max-width: 9ch; }
-      .portrait-frame { width: min(100%, 28rem); }
-      .section-title { max-width: 15ch; }
+      .portrait-frame { width: min(100%, 520px); }
+      .section-title { max-width: 14ch; }
     }
     @media (max-width: 520px) {
-      .wrap { width: min(calc(100% - 1.5rem), var(--measure)); }
-      .nav a { font-size: .86rem; }
-      .story-grid { grid-template-columns: 1fr; gap: 2rem; }
-      .cta-row { align-items: flex-start; flex-direction: column; gap: .9rem; }
+      .wrap { width: min(calc(100% - 1.5rem), var(--max)); }
+      .nav a { font-size: 14px; }
+      .cta-row { align-items: flex-start; flex-direction: column; gap: 16px; }
+      .section-copy p { font-size: 17px; }
+      .topic { font-size: 14px; }
     }
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
@@ -108,9 +106,10 @@
 <body>
   <header class="site-header">
     <div class="wrap header-inner">
-      <a class="brand" href="#top" aria-label="You, Me & startsida">You, Me &</a>
+      <a class="brand" href="#top" aria-label="YOUME AND startsida">YOUME AND</a>
       <nav class="nav" aria-label="Huvudnavigation">
         <a href="#tanken">Tanken</a>
+        <a href="#relation">Er relation</a>
         <a href="#om-oss">Om oss</a>
         <a href="#kontakt">Kontakt</a>
         <span class="language-switch" aria-label="Välj språk">
@@ -126,9 +125,9 @@
     <section class="hero">
       <div class="wrap hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Relationscoaching online · Föreläsningar online</p>
-          <h1>Allt börjar med ett vi<span class="amp" aria-hidden="true">&</span></h1>
-          <p class="lead">Gåvan att gå genom livet med någon. Och friheten att tillsammans lägga till det ni längtar efter: en öppnare relation, ett nytt sätt att leva eller ett drömliv som blir verklighet.</p>
+          <p class="eyebrow"><span class="brand-name">YOUME AND</span> · Relationscoaching online · Föreläsningar online</p>
+          <h1>Allt börjar med er.</h1>
+          <p class="hero-lead">Att välja varandra är en början, inte en begränsning. YOUME AND handlar om att utveckla relationen, utforska nya möjligheter och skapa ett liv som känns rätt för er.</p>
           <div class="cta-row">
             <a class="button" href="mailto:info@youmeand.se">Maila oss</a>
             <a class="text-link" href="https://www.instagram.com/youmeand.se/" target="_blank" rel="noopener noreferrer">Följ @youmeand.se på Instagram</a>
@@ -136,48 +135,55 @@
         </div>
         <figure class="portrait-frame">
           <img class="portrait" src="images/thomas-celina.jpeg" alt="Thomas och Celina Linderholm" fetchpriority="high" />
-          <figcaption class="image-note">You. Me. And.</figcaption>
+          <figcaption class="image-note">En relation. Ett gemensamt val. Många möjligheter.</figcaption>
         </figure>
       </div>
     </section>
 
     <section class="section" id="tanken">
-      <div class="wrap idea-grid">
+      <div class="wrap split">
         <div>
           <p class="section-label">Tanken</p>
           <h2 class="section-title">You. Me. And.</h2>
         </div>
-        <div class="idea-copy">
-          <p>You och Me är grunden: två människor som valt varandra. And är det ni lägger till. En älskare. Ett företag. Ett drömliv.</p>
-          <p class="script-line">Livet är för kort för att följa någon annans manus. Skriv ert eget, och spela huvudrollen i ert liv tillsammans.</p>
+        <div class="section-copy">
+          <p class="idea-copy">You och Me är grunden – två människor som valt varandra. And är allt det som får finnas utöver det.</p>
         </div>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="egna-regler">
-      <div class="wrap">
-        <p class="section-label">Två riktningar, samma grund</p>
-        <h2 class="section-title" id="egna-regler">Våga skriva era egna regler</h2>
-        <div class="story-grid" style="margin-top:2.5rem">
-          <article class="story-item">
-            <h3>Öppna relationen, med omsorg.</h3>
-            <p>Sansat, moget och i en takt som håller. Trygghet, tillit och tydliga gränser först, nyfikenheten sedan. Vi välkomnar alla som känner sig kallade. Vår utgångspunkt är främst våra egna erfarenheter som heteronormativt par, det är vår hemmaplan.</p>
-          </article>
-          <article class="story-item">
-            <h3>Ett drömliv ni själva formar.</h3>
-            <p>Vi flyttade hela familjen från Sverige till en paradisö. Det har gett You, Me & större plats i våra liv, så att vi kan ägna mer tid åt det vi brinner för: att stötta människor i att bygga sina egna drömliv.</p>
-          </article>
+    <section class="section" id="relation">
+      <div class="wrap split">
+        <div>
+          <p class="section-label">Relation</p>
+          <h2 class="section-title">Våga forma er egen relation</h2>
+        </div>
+        <div class="section-copy">
+          <p>Att utforska en öppnare relation kräver kommunikation, tillit och tydliga gränser. Vi tror på att ta det steg för steg, med omsorg om både sig själv och varandra.</p>
+          <p>Vi välkomnar alla, oavsett relationsform eller livssituation. Våra råd bygger på våra egna erfarenheter, som är vår utgångspunkt – men varje relation är sin egen.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="liv">
+      <div class="wrap split">
+        <div>
+          <p class="section-label">Liv</p>
+          <h2 class="section-title">Skapa ett liv på era villkor</h2>
+        </div>
+        <div class="section-copy">
+          <p>Vi lämnade Sverige och flyttade hela familjen till en paradisö för att skapa mer utrymme för det liv vi vill leva. Den resan har gett oss nya perspektiv och mer tid för det vi brinner för: att stötta andra i att utforska sina möjligheter och forma ett liv som passar dem.</p>
         </div>
       </div>
     </section>
 
     <section class="section" aria-labelledby="teman">
-      <div class="wrap idea-grid">
+      <div class="wrap split">
         <div>
           <p class="section-label">Samtal att börja i</p>
           <h2 class="section-title" id="teman">Det som betyder något för er.</h2>
         </div>
-        <div>
+        <div class="section-copy">
           <div class="topics" aria-label="Teman">
             <span class="topic">Öppna relationer</span>
             <span class="topic">Intimitet och närhet</span>
@@ -187,35 +193,36 @@
             <span class="topic">Osäkerhet</span>
             <span class="topic">Kommunikation och gränser</span>
           </div>
-          <p class="section-intro">Vi tror inte att en relationsform passar alla. Vi utforskar vad som känns sant och hållbart för just dig eller er.</p>
+          <p>Vi tror inte att en relationsform passar alla. Vi utforskar vad som känns sant och hållbart för just dig eller er.</p>
         </div>
       </div>
     </section>
 
     <section class="section" id="om-oss">
-      <div class="wrap about-grid">
+      <div class="wrap split">
         <div>
           <p class="section-label">Om oss</p>
           <h2 class="section-title">Vi är Thomas och Celina.</h2>
         </div>
-        <div class="about-copy">
-          <p>Tillsammans i mer än 15 år, gifta i 8, och föräldrar till två små barn. Under våra första tio år levde vi monogamt. De senaste fem åren har vi periodvis utforskat etisk icke-monogami. Vår väg in i alternativa relationsstrukturer började med Tantra 2017.</p>
+        <div class="section-copy">
+          <p>Tillsammans i mer än 17 år, gifta i 10, och föräldrar till två små barn. Under våra första tio år levde vi monogamt. De senaste sju åren har vi utforskat etisk icke-monogami.</p>
           <p class="credentials">Thomas är ingenjör. Celina är advokat och certifierad medlare inom familjerätt.</p>
-          <p>Vi har inte alla svar. Men vi har lärt oss att frihet och trygghet kan gå hand i hand när man prioriterar varandra och ger relationen tid, energi och omtanke.</p>
+          <p>Vi har inte alla svar. Vi delar med oss av våra egna erfarenheter och perspektiv, med öppenhet för att varje människa och relation är unik.</p>
         </div>
       </div>
     </section>
 
     <section class="section" aria-labelledby="sa-arbetar-vi">
-      <div class="wrap offer-grid">
+      <div class="wrap split">
         <div>
           <p class="section-label">Så arbetar vi</p>
-          <h2 class="section-title" id="sa-arbetar-vi">Möten på era villkor.</h2>
+          <h2 class="section-title" id="sa-arbetar-vi">Samtal med plats för er.</h2>
         </div>
-        <div class="offer-copy">
+        <div class="section-copy">
           <article class="offer-item">
             <h3>Coachning online</h3>
-            <p>För alla som känner sig kallade, oavsett relationsform eller var i livet ni befinner er. Vi utgår främst från våra egna erfarenheter som heteronormativt par och är öppna med att det är vår hemmaplan.</p>
+            <p>Vi välkomnar alla, oavsett relationsform eller var i livet ni befinner er.</p>
+            <p>Vi är inte utbildade terapeuter, utan delar med oss av våra egna erfarenheter, perspektiv och verktyg. Eftersom varje människa och relation är unik vill vi inspirera till reflektion och utveckling – med öppenhet, nyfikenhet och respekt för allas olika förutsättningar.</p>
           </article>
           <article class="offer-item">
             <h3>Föreläsningar online</h3>
@@ -226,13 +233,13 @@
     </section>
 
     <section class="section contact-section" id="kontakt">
-      <div class="wrap idea-grid">
+      <div class="wrap split">
         <div>
           <p class="section-label">Kontakt</p>
           <h2 class="section-title">Börja med ett mail.</h2>
         </div>
-        <div>
-          <p class="contact-copy">Berätta lite om er, ställ en fråga eller hör av er om coachning och föreläsningar. Vi svarar personligen.</p>
+        <div class="section-copy">
+          <p>Berätta lite om er, ställ en fråga eller hör av er om coachning och föreläsningar. Vi svarar personligen.</p>
           <div class="contact-links">
             <a class="button" href="mailto:info@youmeand.se">info@youmeand.se</a>
             <a class="text-link" href="https://www.instagram.com/youmeand.se/" target="_blank" rel="noopener noreferrer">Instagram @youmeand.se</a>
@@ -244,7 +251,7 @@
 
   <footer class="site-footer">
     <div class="wrap footer-inner">
-      <p>You, Me & · Thomas och Celina Linderholm</p>
+      <p>YOUME AND · Thomas och Celina Linderholm</p>
       <a href="mailto:info@youmeand.se">Kontakta oss</a>
     </div>
   </footer>
