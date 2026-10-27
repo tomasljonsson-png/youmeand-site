@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 843 197" role="img" aria-labelledby="logo-title">
+  <title id="logo-title">YOUME AND</title>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="77" cy="115" r="66" stroke="#f3eee4" stroke-width="6"/>
+    <circle cx="157" cy="115" r="66" stroke="#c3a77c" stroke-width="6"/>
+  </g>
+  <circle cx="117" cy="115" r="24" fill="#211e1b"/>
+  <text x="117" y="133" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="42" fill="#c3a77c">&amp;</text>
+  <text x="284" y="140" font-family="Arial, Helvetica, sans-serif" font-size="66" font-weight="700" letter-spacing="11" fill="#f3eee4">YOUME</text>
+  <text x="612" y="140" font-family="Arial, Helvetica, sans-serif" font-size="66" font-weight="700" letter-spacing="11" fill="#c3a77c">AND</text>
+</svg>
